@@ -60,7 +60,8 @@ export const {
   },
   trustHosts: [
     // Add your local development URL
-    "kxa.vercel.app", // Add your production URL
+    "https://main--kxa.netlify.app",
+    "https://kxa.vercel.app", // Add your production URL
   ],
 
   // Use JWT for sessions
