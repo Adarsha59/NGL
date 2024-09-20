@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# NGL (Not Gonna Lie) User Manual
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Getting Started](#getting-started)
+- [Creating an Account](#creating-an-account)
+- [Logging In](#logging-in)
+- [Using the Dashboard](#using-the-dashboard)
+- [Sharing Your Feedback Link](#sharing-your-feedback-link)
+- [Viewing Anonymous Messages](#viewing-anonymous-messages)
+  ex
+
+## Introduction
+
+Welcome to NGL (Not Gonna Lie), the anonymous feedback application where you can receive feedback from your friends without revealing their identities. This user manual will guide you through the process of creating an account, logging in, using the dashboard, and managing your anonymous messages.
 
 ## Getting Started
 
-First, run the development server:
+- **Accessing the App**: Open your web browser and go to `http://localhost:3000` or the deployed URL if you're using a live version.
+- **Navigating the Interface**: The main interface includes options for signup, login, and accessing the dashboard.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Creating an Account
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. **Navigate to the Signup Page**: Click on the "Sign Up" link on the homepage.
+2. **Enter Your Details**:
+   - **Username**: Choose a unique username.
+   - **Email**: Provide a valid email address.
+   - **Password**: Create a secure password.
+3. **Submit the Form**: Click the "Sign Up" button to create your account.
+4. **Verification**: Check your email for a verification link if required. Follow the instructions to complete the registration process.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Logging In
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. **Navigate to the Login Page**: Click on the "Login" link on the homepage.
+2. **Enter Your Credentials**:
+   - **Email**: Enter your registered email address.
+   - **Password**: Enter your account password.
+3. **Submit the Form**: Click the "Login" button to access your account.
 
-## Learn More
+## Using the Dashboard
 
-To learn more about Next.js, take a look at the following resources:
+1. **Accessing the Dashboard**: After logging in, you will be redirected to your dashboard.
+2. **Dashboard Overview**: The dashboard includes your unique feedback link and an overview of your feedback activity.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Sharing Your Feedback Link
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. **Find Your Link**: On the dashboard, locate your unique feedback link.
+2. **Copy and Share**: Copy the link and share it with friends via email, social media, or any other method you prefer.
+3. **Collect Feedback**: Encourage your friends to use the link to provide anonymous feedback.
 
-## Deploy on Vercel
+## Viewing Anonymous Messages
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. **Access Feedback Section**: In the dashboard, navigate to the feedback section.
+2. **Review Messages**: View all the anonymous messages you have received. Each message will include the timestamp but not the sender's identity.
+3. **Manage Feedback**: Check regularly for new messages and review feedback.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contact Support
+
+For additional support, please reach out to our customer support team:
+
+- **Email**: code.adarsha@gmail.com
+- **Authors**: Adarsha Paudyal
