@@ -59,7 +59,7 @@ export const {
     error: "/auth/error",
   },
   trustHosts: [
-    "localhost:3000", // Add your local development URL
+    // Add your local development URL
     "kxa.vercel.app", // Add your production URL
   ],
 
