@@ -1,4 +1,5 @@
 // Import necessary modules
+export const runtime = "edge";
 import connectDB from "@/app/lib/connectDb";
 import { NextResponse } from "next/server";
 import dataModule from "@/app/models/User";

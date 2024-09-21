@@ -1,4 +1,5 @@
 // Import necessary modules
+export const runtime = "edge";
 import connectDB from "@/app/lib/connectDb"; // Adjust path as necessary
 import Item from "@/app/models/User"; // Ensure this model matches your database schema
 import { NextResponse } from "next/server";

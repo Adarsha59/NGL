@@ -1,4 +1,5 @@
 "use client";
+export const runtime = "edge";
 import React, { useState, useEffect } from "react";
 import { FaTrash } from "react-icons/fa";
 import { motion } from "framer-motion";

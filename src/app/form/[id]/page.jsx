@@ -1,5 +1,5 @@
 "use client"; // This ensures it's a client-side component
-
+export const runtime = "edge";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useForm } from "react-hook-form";

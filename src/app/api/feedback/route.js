@@ -1,3 +1,4 @@
+export const runtime = "edge";
 import Feedback from "@/app/models/Message";
 import connectDB from "@/app/lib/connectDb";
 import User from "@/app/models/User";

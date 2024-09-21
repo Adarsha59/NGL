@@ -1,3 +1,4 @@
+export const runtime = "edge";
 import connectDB from "@/app/lib/connectDb";
 import UserData from "@/app/models/User";
 import { NextResponse } from "next/server";
