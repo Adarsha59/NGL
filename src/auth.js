@@ -46,7 +46,6 @@ export const {
           return {
             id: user._id.toString(),
             username: user.username,
-            email: user.email,
           };
         } catch (error) {
           console.error("Authentication error:", error);

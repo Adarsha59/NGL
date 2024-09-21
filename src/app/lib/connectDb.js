@@ -1,20 +1,31 @@
 import mongoose from "mongoose";
 
-const connection = {};
+const connection = { isConnected: null };
 
 async function connectDB() {
-  // Check if we have a connection to the database or if it's currently connecting
   if (connection.isConnected) {
     console.log("Already connected to the database");
     return;
   }
 
+  if (mongoose.connections.length > 0) {
+    connection.isConnected = mongoose.connections[0].readyState;
+
+    if (connection.isConnected === 1) {
+      console.log("Using existing database connection");
+      return;
+    }
+
+    await mongoose.disconnect(); // Ensure any existing connection is clean
+  }
+
   try {
-    // Attempt to connect to the database
-    const db = await mongoose.connect(process.env.MONGODB_URI || "", {
-      dbName: process.env.DBNAME, // Make sure this is set in your .env file
-      // useNewUrlParser: true, // Ensures that the new connection string parser is used
-      // useUnifiedTopology: true,
+    // Connect to the database
+    const db = await mongoose.connect(process.env.MONGODB_URI, {
+      dbName: process.env.DBNAME,
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+      serverSelectionTimeoutMS: 5000, // Fast timeout to prevent hanging connections
     });
 
     connection.isConnected = db.connections[0].readyState;
@@ -22,9 +33,7 @@ async function connectDB() {
     console.log("Database connected successfully");
   } catch (error) {
     console.error("Database connection failed:", error);
-
-    // Graceful exit in case of a connection error
-    process.exit(1);
+    process.exit(1); // Exit to avoid further issues
   }
 }
 

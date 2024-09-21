@@ -12,7 +12,9 @@ const CardLayout = ({ params }) => {
 
   const deleteCard = async (userId, messageId) => {
     try {
-      const response = await fetch(`/api/delete`, {
+      const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+
+      const response = await fetch(`${baseUrl}/api/delete`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -66,7 +68,7 @@ const CardLayout = ({ params }) => {
   useEffect(() => {
     const fetchMessages = async () => {
       try {
-        const res = await fetch(`/api/message`, {
+        const res = await fetch(`${baseUrl}/api/message`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ id }), // Send id along with form data
