@@ -58,8 +58,9 @@ export const {
     error: "/auth/error",
   },
   trustHosts: [
-    "localhost:3000", // Add your local development URL
-    "kxa.vercel.app", // Add your production URL
+    // Add your local development URL
+    "https://main--kxa.netlify.app",
+    "https://kxa.vercel.app", // Add your production URL
   ],
 
   // Use JWT for sessions

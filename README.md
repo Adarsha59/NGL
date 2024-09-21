@@ -9,7 +9,7 @@
 - [Using the Dashboard](#using-the-dashboard)
 - [Sharing Your Feedback Link](#sharing-your-feedback-link)
 - [Viewing Anonymous Messages](#viewing-anonymous-messages)
-  ex
+  
 
 ## Introduction
 
