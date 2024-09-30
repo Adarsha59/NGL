@@ -15,7 +15,7 @@ const CardLayout = ({ params }) => {
     try {
       const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
 
-      const response = await fetch(`${baseUrl}/api/delete`, {
+      const response = await fetch(`https://kxa.vercel.app/api/delete`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
